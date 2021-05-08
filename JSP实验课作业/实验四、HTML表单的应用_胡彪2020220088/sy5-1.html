@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>表单标记的应用实验</title>
+</head>
+<body>
+<div align="center">
+<br><br><br><br><br>
+<hr width="80%" color="red">
+<form action="22.htm" method="post">
+<table width="80% height="294" border="1" bordercolorlight="#C0C0C0" bordercolor="#008080" bordercolordark="#000000">
+<tr><td width="654" align="left" height="6"><font color="#0000FF">QQ号码:10000</font></td></tr>
+<tr><td width="654" align="left" height="27"><font color="#0000FF"><b>昵称</b></font><font color="#000000">:<input type
+="text" name="nick" size="20" value=""></font></td></tr>
+<tr><td width="654" align="left" height="27"><font color="#0000FF"><b>真实姓名</b>:<input type
+="text" name="realname" size="20" value="嘿嘿"></font></td></tr>
+<tr><td width="654" align="left" height="21"><font color="#0000FF"><b>性别</b></font><font color="#000000">:<input type
+="radio" name="gender" value="0" checked>男&nbsp;<input type="radio" name="gender" value="1">女</font></td></tr>
+<tr><td width="654" align="left" height="27"><font color="#0000FF"><b>出生年份</b></font><font color="#000000">:<input type
+="text" name="year" value="1982" size="4" maxlength="4">年<select name="month" class="p1">
+         <option value="01">1</option>
+         <option value="02">2</option>
+         <option value="03">3</option>
+         <option value="04">4</option>
+         <option value="05">5</option>
+         <option value="06">6</option>
+         <option value="07">7</option>
+         <option value="08">8</option>
+         <option value="09">9</option>
+         <option value="10">10</option>
+         <option value="11">11</option>
+         <option value="12">12</option></select>月
+        <select name="day" class="p1">
+         <option value="01">1</option>
+         <option value="02">2</option>
+         <option value="03">3</option>
+         <option value="04">4</option>
+         <option value="05">5</option>
+         <option value="06">6</option>
+         <option value="07">7</option>
+         <option value="08">8</option>
+         <option value="09">9</option>
+         <option value="10">10</option>
+         <option value="11">11</option>
+         <option value="12">12</option>
+         <option value="13">13</option>
+         <option value="14">14</option>
+         <option value="15">15</option>
+         <option value="16">16</option>
+         <option value="17">17</option>
+         <option value="18">18</option>
+         <option value="19">19</option>
+         <option value="20">20</option>
+         <option value="21">21</option>
+         <option value="22">22</option>
+         <option value="23">23</option>
+         <option value="24">24</option>
+         <option value="25">25</option>
+         <option value="26">26</option>
+         <option value="27">27</option>
+         <option value="28">28</option>
+         <option value="29">29</option>
+         <option value="30">30</option>
+         <option value="31">31</option></select>日
+    </font></td></tr>
+    <tr><td><textarea rows="6" name="personal" cols="60">&nbsp;&nbsp;&nbsp;&nbsp;你，就像一只风筝，无论飞得再高再远，总有我长长的牵挂！</textarea></td></tr>
+    <tr><td><input type="submit" name="ok" value="提交"><input type="reset" name="re-input" value="重写一遍"></td></tr>
+   </table></form></div>
+   <div>
+	   （1）表单标记
+	   <br><img src="imgs/捕获1.PNG">
+	   <p>
+			form标签中有一个action属性，该属性的作用是：提交表单后，将表单数据发送到指定位置“22.htm”	   
+	   </p>
+		<p>
+			表单数据可以作为 URL 变量（method="get"）或者 HTTP post （method="post"）的方式来发送。
+	   </p>
+	   <p></p>
+	   
+	   （2）添加单选按钮
+	   <br><img src="imgs/捕获2.PNG">
+	   <p>
+	   	input标签中，type="radio"设置单选框属性，相同name值为一组，
+	   </p>
+	   	<p>
+		checked默认选中，value为选项的值
+	   </p>
+	   <p></p>
+	   （3）添加下拉列表
+	   <br><img src="imgs/捕获3.PNG">
+	   <p>
+		下拉列表（select）的选项（option）会触发change事件，即选择项改变事件，因此可以在change事件的响应函数中获取新选中option的value值，而不必要刷新页面。	   
+		</p>
+
+	   <p></p>   
+		（4）添加文本域
+	   <br><img src="imgs/捕获4.PNG">
+	   <p>
+		cols规定文本区域内可见的宽度。rows规定文本区域内可见的行数。name规定文本区域的名称。	
+		</p>
+
+	   <p></p> 
+	   （5）添加提交按钮
+	   <br><img src="imgs/捕获5.PNG">
+	   <p>
+		input标签中type="submit"设置成发送表单，value="提交"展示的文字，type="reset"重置表单
+		</p>
+	   
+	   <p></p> 
+
+
+   </div>
+   
+   </body></html>
